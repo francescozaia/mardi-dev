@@ -1,0 +1,165 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	font-family: 'Rambla', sans-serif;
+	color: #00b099;
+}
+
+.navbar .container-fluid {
+  background-color: #84e6df;
+}
+
+.navbar .container-fluid form input, .navbar .container-fluid form button {
+	float:none;
+}
+
+.mainBtn {
+	height:40px;
+	line-height: 20px;
+	color: #7bebdd;
+	background-color:#30c9b4;
+	text-transform: uppercase;
+}
+.not-backgrounded {
+	background-image: linear-gradient(bottom, rgb(255,255,255) 40%, rgb(133,230,224) 90%);
+	background-image: -o-linear-gradient(bottom, rgb(255,255,255) 40%, rgb(133,230,224) 90%);
+	background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 40%, rgb(133,230,224) 90%);
+	background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 40%, rgb(133,230,224) 90%);
+	background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 40%, rgb(133,230,224) 90%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.4, rgb(255,255,255)),
+		color-stop(0.9, rgb(133,230,224))
+	);
+}
+.backgrounded {
+	background:transparent url(../img/bg-png8.png) center bottom no-repeat;
+	-moz-background-size:100% auto; /* Old Firefox */
+	background-size:100% auto;
+	margin-top: 40px; /* l'altezza della navbar */
+}
+
+.hero-unit {
+	margin-bottom: 200px;
+}
+
+.hero-unit section {
+	transform: rotate(356deg) scale(1) skew(-4deg) translate(0px);
+	-webkit-transform: rotate(356deg) scale(1) skew(-4deg) translate(0px);
+	-moz-transform: rotate(356deg) scale(1) skew(-4deg) translate(0px);
+	-o-transform: rotate(356deg) scale(1) skew(-4deg) translate(0px);
+	-ms-transform: rotate(356deg) scale(1) skew(-4deg) translate(0px);
+}
+.hero-unit > div {
+	margin-top: 50px;
+}
+.hero-unit h1 {
+	color: #FFF;
+	margin-bottom: 0;
+	font-size: 60px;
+	line-height: 1;
+	letter-spacing: -1px;
+	text-align: right;
+	text-shadow:2px 5px 15px rgba(0,0,0,0.2); /* TODO: xbrowser */;
+}
+
+.hero-unit section {
+	float: right;
+}
+.hero-unit p {
+	margin: 0px;
+	color: #f7781e;
+}
+
+.hero-unit .text {
+	background:transparent url(../img/box.png) 20px top no-repeat;
+	width: 200px;
+	height: 150px;
+	color: #9e005d;
+	text-align: left;
+}
+
+.hero-unit .text div {
+	margin-top: 30px;
+	font-size: 1.2em;
+	width: 150px;
+}
+.navbar-shadowed {
+	-webkit-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5);
+}
+#mainContent {
+	margin-top: 40px;
+}
+#mainContent > div {
+	float: left;
+	margin-top: 30px;
+	clear: left;
+}
+#mainContent .foxbox div {
+	margin-top: 30px;
+	float: left;
+}
+#mainContent .smallMap {
+	background-color: #48d1bd;
+	height: 180px;
+	width: 110px;
+}
+#mainContent .smallMap p {
+	color:#ffff6d;
+	padding: 15px;
+}
+#mainContent .smallMap p strong {
+	font-size: 120%;
+}
+#mainContent .smallImage {
+	background-color: #CCC;
+	height: 180px;
+	width: 300px;
+}
+#mainContent .smallDescription {
+	height: 180px;
+	width: 200px;
+	margin: 0 20px;
+}
+
+
+
+#mainContent .shape {
+    width:600px;
+    height: 180px;
+    margin:0 auto;
+    float: left;
+}
+#mainContent .after {
+	width:0px;
+    height:0px;
+    border-width:0 0 260px 100px;
+    border-style:solid;
+    border-color:  #d71f55 transparent transparent #d71f55;
+    z-index: 200;
+    margin-left:-280px;
+}
+#mainContent .ganitt {
+	width:280px;
+    height:260px;
+    z-index: 100;
+}
+#mainContent .before {
+    height: 260px;
+    width: 100px;
+    background-color:#d71f55;
+}
+
+/* Support transparent border colors in IE6. */
+* html #mainContent .top {
+    filter:chroma(color=#123456);
+    border-top-color:#123456;
+    border-left-color:#123456;
+}
